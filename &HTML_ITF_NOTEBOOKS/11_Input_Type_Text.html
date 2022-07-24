@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_Input_Type_Text</title>
+</head>
+<body>
+    input tek satırlık bir metin girişi oluşturmak için kullanılır.
+    <form action="https://www.google.com/">
+        <h2>Welcome Google</h2>
+        Username:
+        <input type="text" name="username"><br><br><br>
+        Password:
+        <input type="password" name="password">  password türü şifre için kullanılır. Yazıldığında * veya büyük nokta şeklinde gözükür. 
+        <br><hr>
+        <p> type="radio">radyo düğmesi tanımlamak için kullanılır.
+            Radyo düğmeleri, kullanıcıların bir dizi seçenekten yalnızca birini seçmesine olanak tanır. <br>
+            <b>Değer özelliği,</b>  seçilen seçenek için sunucuya gönderilen değeri gösterir. <br>
+            <b>Checked özelliği, </b>
+            sayfa yüklendiğinde hangi değerin kontrol edildiğini gösterir.</p>
+
+        <h2>Gender</h2>
+
+        <input type="radio" name="Gender" value="male" checked> male 
+        <br>
+        <input type="radio" name="Gender" value="female" checked> female <br>
+
+        <hr>
+        <p>checkbox">onay kutusu oluşturmak için kullanılır.Onay kutuları, kullanıcıların bir soruya yanıt olarak sıfır veya daha fazla seçenek seçmesine olanak tanır</p> 
+
+        <form action="https://www.google.com/">
+
+            <h2>Hangi gün müsaitsin.</h2>
+            <input type="checkbox" name="days" value="Monday">Monday<br>
+            <input type="checkbox" name="days" value="Tuesday">Tuesday<br>
+            <input type="checkbox" name="days" value="Wednesday">Wednesday<br>
+
+
+        </form>
+
+        <form action="https://www.google.com/">
+
+            <h2>Kaç yaşındasın</h2>
+            <input type="number" name="age">
+           
+
+
+        </form>
+
+
+    </form>
+    <br>
+<hr>
+    <form action="https://www.google.com/">
+        <b> reset"></b>, tüm form değerlerini varsayılan değerlerine sıfırlamak için kullanılır.
+        <h2>Hangi gün müsaitsin.</h2>
+        <input type="checkbox" name="days" value="Monday">Monday<br>
+        <input type="checkbox" name="days" value="Tuesday">Tuesday<br>
+        <input type="checkbox" name="days" value="Wednesday">Wednesday<br>
+
+        <input type="reset" value="reset">
+
+
+    </form>
+
+    <form action="https://www.google.com/">
+
+        <h2>Kaç yaşındasın</h2>
+        kullanıcı adı <br>
+
+        <input type="text" name="kullanıcı adı" value="asdf" disabled maxlength="10">
+        <input type="submit" value="submit">
+<hr>
+        Ders seçiniz: <br>
+        <select name="ders">
+            <option name="boş" 
+            value="seçiniz" selected> Lütfen seçiniz ></option>
+            <option name="ders-1" value="Zorunlu">Zorunlu Ders</option>
+            <option name="ders-2" value="Seçmeli">Seçmeli Ders</option>
+        </select><br><hr>
+
+        Mesajınız <br>
+        <textarea name="mesaj" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="reset" value="Formu temizle">
+        <input type="submit" value="e-posta gönder">
+
+    </form>
+
+    
+</body>
+</html>

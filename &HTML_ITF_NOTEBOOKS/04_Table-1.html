@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_Table</title>
+</head>
+<body>
+    <!-- <table> bir tablo oluşturmak için (table)<table> etiketi kullanırız. <br>
+    <tr> tr etiketi, her tablo satırını tanımlamak için kullanılır <br>
+    <th> th etiketi bir tablo başlığı tanımlar .
+    <td>etiketi ile bir tablo hücresi tanımlanır.
+
+    <table border="number"> ile border ekleyip numarayı artırarak çizgi kalınlığını belirleyebiliriz. -->
+
+    <!-- Öğelerdeki metin <td>normaldir ve varsayılan olarak sola hizalıdır.
+
+    <th> öğelerindeki metin varsayılan olarak kalındır ve ortalanmıştır.  -->
+    
+    <h1>Kurs Proğramı</h1>
+    <table width="100%" border="8">
+        <tr>
+            <th>Dersler</th>
+            <th style="background-color: grey;">Pazartesi</th>
+            <th style="background-color: grey;">Salı</th>
+
+        </tr>
+        <tr>
+            <td>1.ders </td>
+            <td align="center" colspan="2">CSS</td>  
+        </tr>
+        <!-- colspan niteliğini kullanarak iki veya daha fazla sütuna yayabiliriz. -->
+        <tr>
+            <td>2.ders</td>
+            <td align="center">CT</td>
+            <td>HTML </td>
+        </tr>
+
+        <!-- align Tablo veya hücre konumunu değiştirmek için <table> etiketi veya <td> etiketi içindeki align niteliğini kullanabiliriz. Ortala, yasla...-->
+
+        <tr>
+            <td rowspan="2" >3.ders</td>
+            <td>HTML </td>
+            <td>CF</td>
+        </tr>
+        <!-- rowspan özniteliğini kullanarak iki veya daha fazla satıra yayılabiliriz. -->
+        <tr>
+            <td>4.ders</td>
+            <td>Agile </td>
+
+        </tr>
+    </table>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+    <!-- internal Style -->
+    <style>
+        /* h1 Id */
+        #h1{
+            background-color: chartreuse;
+        }
+        #dj1{
+            background-color: darkslateblue;
+            color: aliceblue;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #tr2{
+            text-align: center;
+            background-color: chocolate;
+        }
+        /* class3 class . ile başlar.  */
+        .class3{
+            background-color:magenta;
+        }
+        #tr4{
+            background-image: url("https://picsum.photos/id/684/600/400");
+            background-position: center;
+            background-size: cover;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h5>Tablolar</h5>
+    <table  width="100%" border="2" >
+    <!-- <thead>Öğe, bir tablonun her bir bölümünü (üstbilgi, gövde, altbilgi) belirtmek için <tbody > ve <tfoot> öğeleriyle birlikte kullanılır . -->
+        <thead>
+            <tr>
+                <th>Gunler</th>
+                <th>Ders</th>
+                <th>Not</th>
+                <th>a</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pazartesi</td>
+                <td id="h1" >HTML</td>
+                <td>95</td>
+                <td>b</td>
+            </tr>
+            <tr id="tr2">
+                <td>Salı</td>
+                <td>CSS</td>
+                <td>85</td>
+                <td>b</td>
+            </tr>
+            <tr class="class3">
+                <td>Çarşamba</td>
+                <td>JavaScript</td>
+                <td>70</td>
+                <td>b</td>
+            </tr>
+            <tr>
+                <td id="tr4"  align="center" rowspan="2" >Perşembe</td>
+                <td rowspan="2" colspan="2">React</td>
+                <!-- <td rowspan="2" >90</td> -->
+                <td>b</td>
+            </tr>
+            <tr>
+                <!-- <td>Perşembe</td> -->
+                <!-- <td>React-Native</td> -->
+                <!-- <td>95</td> -->
+                <td>b</td>
+            </tr>
+            <tr>
+                <td>Cuma</td>
+                <td id="dj1">Django</td>
+                <td>95</td>
+                <td>b</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" >Cumartesi Tatil</td>
+                <!-- <td>Boşders</td>
+                <td>00</td> -->
+                <td>b</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table border="2">
+        <thead>
+            <tr>
+                <th rowspan="2">Day</th>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tuesday</td> 
+                <td>07.00 a.m</td> 
+                <td>11.00 a.m</td> 
+                <td rowspan="2">
+                    Computer Fundemental
+                    <ul>
+                    <li>Hardware</li>
+                    <li>OS</li>
+                    <li>Storage</li>
+                    <li>Data</li>
+                </ul></td> 
+            </tr>
+            <tr>
+                <td rowspan="3">Thursday</td>
+                <td>07.00 a.m</td>
+                <td>07.50 a.m</td>
+            </tr>
+            <tr>
+                <td>08.00 a.m</td>
+                <td>08.50 a.m</td>
+                <td rowspan="2">HTML <br> CSS</td>
+            </tr>
+            <tr>
+                <td>09.00 a.m</td>
+                <td>10.00 a.m</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,6 @@
+SEO artırma yöntemleri:
+1- Title
+2- <meta name="yüzük" content="Lorem ipsum dolor sit"> eklenmesi
+3- Body'de H etiketler.
+
+https://colorhunt.co/ renk kartelası

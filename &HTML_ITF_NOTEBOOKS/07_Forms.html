@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_Links</title>
+</head>
+<body>
+    <h3>Kullanıcıdan bilgi toplamak için "form" elementi kullanıyoruz.
+        Bir HTML formu, form öğelerinden oluşur.</h3>
+        <hr>
+    <h4>The action attribute: Her  form> öğesi için action niteliği gereklidir. Form gönderildiğinde gerçekleştirilecek eylemi tanımlamak için kullanılır. gönderildiğinde, form verileri sunucudaki bir web sayfasına gönderilir</h4>
+    <form action="">
+        <h2>Bu bir Formdur.</h2>
+
+    </form>
+    <hr>
+    <h3>The Text Input element: < input type="text" >, tek satırlık bir metin girişi oluşturmak için kullanılır.</h3>
+    
+    <form action="https://www.outdoorhaber.com/wp-content/uploads/2018/12/turkiye-daglari.jpg" target="_blank"><h2>Dağ resimlerine hoşgeldin</h2>
+    Kullanıcı adı:<br>
+    <input type="text" name="Kullanıcı adı">
+    </form>
+
+
+    <br>
+    <h3>Name :Kullanıcılar bir forma bilgi girdiğinde, bu özniteliğin değeri form kontrolünü tanımlar.
+    name özniteliğinin atlanması durumunda, o giriş alanının verileri gönderilmeyecektir.</h3>
+    <br>
+    <h4>Method niteliği, form verilerinin sunucuya nasıl gönderileceğini belirlemek için kullanılır.
+
+        Gönderilen formlar için iki tür yöntem vardır: GET ve POST.
+        
+        Method özniteliği için varsayılan değer GET yöntemidir. Method niteliği atlanırsa, form verileri GET yöntemi kullanılarak gönderilir.
+        
+        GET yöntemi ile form verilerinden gelen değerler sayfa adres alanında görünecektir. Bu nedenle hassas veriler için GET yöntemi kullanılmamalıdır.
+        
+        Form kısa ve hassas değilse GET yöntemini kullanmak idealdir.
+        
+        Formun çok uzun olması ve hassas veriler (örneğin şifreler) içermesi durumunda POST yöntemini kullanmak idealdir.</h4>
+        <hr>
+        <h3>Submit: Gönder düğmesi, form verilerini sunucuya göndermek için bir düğme tanımlamak için kullanılır.Value özelliği, bir düğmede görünen metni belirtmek için kullanılır..</h3>
+
+        <form action="https://www.outdoorhaber.com/wp-content/uploads/2018/12/turkiye-daglari.jpg" target=_blank> 
+            <h2>dağ resimleri</h2>
+        kullanıcı adı : <br>
+        <input type="text" name="kullanıcı adı">
+        <input type="submit" name="gönder">
+    </form>
+    
+</html>
