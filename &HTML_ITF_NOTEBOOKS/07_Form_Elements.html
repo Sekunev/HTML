@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07_Form_Elements</title>
+    <style>
+        #seker{
+            width: 50%;
+            border: 5px solid darkorange;
+        }
+        #seker2{
+            width: 50%;
+            border: 5px solid darkorange;
+        }
+        #yorum{
+            resize: none;
+            width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formlar ve elementler</h1>
+
+    <form action="result.html" method="get">
+
+        <div>
+            <h4>Text</h4>
+            <p><span style="color:red ;">label </span>contentine  yazılan metin üzerine mause geldiğinde input'a for-id ile bağlandığı için input satırının aktif olmasını sağlar.bağlantı için for ile input'taki id aynı olmalı</p>
+
+            <label for="name">Adınızı Giriniz:</label>
+            <input type="text" name="isim" id="name" placeholder="Isminizi giriniz..." required> 
+
+             <br>
+            <label for="lname">Soyadınızı Giriniz:</label>
+            <input type="text" name="Sayad" id="lname" placeholder="Soyadınızı giriniz...">
+            <br>
+            
+            <p><span style="color:red ;">required </span>yazılmadığında işaretlenen input satırına giriş yapılmadan yapılan submitlerde "lütfen bu alanı doldurun" şeklinde uyarı verir. input açılış parantezi içine yazılır.</p>
+
+            <p><span style="color:red ;">placeholder </span>İnput satırı içerisine flu olarak belirttiğimiz yazıyı yazar</p>
+
+            <p><span style="color:red ;">Value ve name </span>girilen input'un backend'de ki değeridir.</p>
+
+        </div>
+        <hr>
+        <div>
+            <h4>Password</h4>
+            <label for="sifre">Parolanızı giriniz:</label>
+            <input type="password" name="girilen parola" id="sifre">
+        </div>
+        <hr>
+        <div>
+            <h4>Radio</h4>
+            <p>Cinsiyet</p>
+            <label for="gender-1">Erkek</label>
+            <input type="radio" name="cinsiyet" id="gender-1" value="Erkek"> 
+
+            <label for="gender-2">Kadın</label>
+            <input type="radio" name="cinsiyet" id="gender-2" value="kadın" checked> 
+            <p><span style="color:red ;">checked </span>satır içerisine yazıldığında belirtilen input seçili gelir. Bu örnekte checked kadın inputunda olduğu için kadın seçili geliyor.</p>
+
+        </div>
+        <hr>
+        <div>
+            <h4>Checkbox</h4>
+            <p>Favori hayvanlarınızı işaretleyin</p>
+            <input type="checkbox" name="hayvan-1" id="Panda" value="panda">
+            <label for="fish">Panda</label>
+            <input type="checkbox" name="hayvan-2" id="fish" value="balık">
+            <label for="fish">Balık</label>
+        </div>
+        <hr>
+        <div>
+            <h4>Number</h4>
+            <label for="age">Yaş:</label>
+            <input type="number" name="girilen yaş" id="age" min="18" max="55">
+
+            <p><span style="color:red ;">min-max  </span>ile input satırında girilmesini istediğimiz minimum ve maximum değerleri yazarak sınırlama koyabiliriz. değer dışı input uyarı mesajı döndürür. Bu inputta 18-55 arasıdır.</p>
+
+        </div>
+        <hr>
+        <div>
+            <h4>search</h4>
+            <label for="serc">Ara:</label>
+            <input type="search" name="aranan kelime" id="serc" maxlength="10" minlength="5">
+            <p><span style="color:red ;">minlength-maxlength  </span>ile input satırında girilmesini istediğimiz minimum ve maximum uzunluk miktarını belirleyerek sınırlama koyabiliriz. Değer dışı input uyarı mesajı döndürür. Bu inputta 5-10 arasıdır.</p>
+
+        </div>
+        <hr>
+        <div>
+            <h4>Color</h4>
+            <label for="renk">Renk Seçin: </label>
+            <input type="color" name="seçilen_renk" id="">
+        </div>
+        <hr>
+        <div>
+            <h4>Date</h4>
+            <label for="tarih">Tarih seçin</label>
+            <input type="date" name="seçilen tarih" id="tarih" min="2022-05-03" max="2022-08-22">
+        </div>
+        <hr>
+        <div>
+            <h4>e-mail</h4>
+            <label for="email">E-mail Girin</label>
+            <input type="email" name="e_mail: " id="email">
+        </div>
+        <hr>
+        <div>
+            <h4>File</h4>
+            <label for="dosya">Daosya seç</label>
+            <input type="file" name="seçilen dosya" id="dosya">
+        </div>
+        <hr>
+        <div>
+            <h4>Tel</h4>
+            <label for="no">Tel No: </label>
+            <input type="tel" name="Tel No" id="no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx-xxx-xx-xx">
+
+            <p><span style="color:red ;">pattern </span>ile input satırında girilmesini istediğimiz rakam arallığı ve formatını belirleyebiliriz. ilk aralık: 0-9 arası rakamları içerecek şekilde 3 karakterli aralığı ifade eder.</p>
+
+            <p><span style="color:red ;">placeholder </span>İnput satırı içerisine flu olarak belirttiğimiz yazıyı yazar</p>
+
+        </div>
+        <hr>
+        <div>
+            <h4>Select</h4>
+            <label for="seker">Hangi Tatlıyı istersiniz: </label>
+            <br>
+            <select name="seçilen tatlı" id="seker" size="3">
+                <option value="Sütlaç">Sütlaç</option>
+                <option value="Keşkül">Keşkül</option>
+                <option value="baklava">baklava</option>
+            </select>
+
+            <p><span style="color:red ;">size </span>ile satır genişliğini ayarlıyoruz.</p>
+
+            <p><span style="color:red ;">select </span>Öğe, bir açılır liste tanımlamak için kullanılır .             Kullanıcılar açılır listeden bir seçenek seçebilir. Açılır liste, iki veya daha fazla "option" öğeden oluşur.</p>
+        </div>
+        <hr>
+        <div>
+            <h4>optgroup</h4>
+            <label for="seker2">Hangi tatlı</label>
+            <br>
+            <select name="seçilen tatlı" id="seker2">
+                <optgroup label="Sütlü Tatlılar">
+                <option value="Sütlaç">Sütlaç</option>
+                <option value="Keşkül">Keşkül</option>
+                <option value="puding">baklava</option>
+                </optgroup>
+
+                <optgroup label="Şerbetli Tatlılar">
+                    <option value="Baklava">Baklava</option>
+                    <option value="Kadayıf">Kadayıf</option>
+                    <option value="Künefe">Künefe</option>
+                </optgroup>
+
+            </select>
+            <p><span style="color:red ;">optgroup </span> açılır listedeki seçenekleri gruplandırmaya yarar.</p>
+        </div>
+        <hr>
+        <div>
+            <h4>textarea</h4>
+            <label for="yorum">yorum</label>
+            <br>
+            <textarea name="girilen yorum" id="yorum" placeholder="yorum gir"></textarea>
+
+            <p><span style="color:red ;">textarea </span> Kullanıcılar için daha büyük bir metin alanı oluşturmak için textarea öğesi kullanılır.</p>
+        </div>
+        <hr>
+        <div>
+            <h4>datalist</h4>
+            <label for="input-browser">browsers</label>
+            <input type="text" name="Kullanılan Browser" id="input-browser" list="browser">
+
+            <datalist id="browser">
+                <option value="firefox"></option>
+                <option value="crome"></option>
+                <option value="yandex"></option>
+            </datalist>
+
+            <p><span style="color:red ;">datalist </span> Kullanıcıların tüm listeyi kaydırması zor olabilir. Kullanıcılar, veri girerken filtre seçeneklerinin bir açılır listesini göreceklerdir. select'den farklı olarak giriş'te yapabilmektedirler.list etiketi değeri ile datalist id'si aynı olmalıdır.</p>
+
+        </div>
+        <hr>
+        <div>
+            <h4>fieldset</h4>
+            <fieldset>
+                <legend>Kişisel Bilgiler</legend>
+                <label for="fname">isim gir</label>
+                <input type="text" name="isim" id="fname">
+                <br>
+                <label for="sname">soyisim gir</label>
+                <input type="text" name="isim" id="sname">
+            </fieldset>
+            <p><span style="color:red ;">fieldset </span> öge içeriğini çevreleyen bir çerçeve görüntüsü oluşturur.</p>
+        </div>
+
+        <br><hr>
+        <h4>Submit</h4>
+        <input type="submit" value="Gönder">
+        <p><span style="color:red ;">Submit </span> Gönder düğmesi oluşturuyoruz.</p>
+        <br><hr>
+
+        <h4>Reset</h4>
+        <input type="reset" value="Sıfırla" >
+        <p><span style="color:red ;">Reset </span> Sayfadaki tüm bilgileri sıfırlar.</p>
+        
+        
+    </form>
+    
+</body>
+</html>
