@@ -37,16 +37,20 @@
             <label for="name">Adınızı Giriniz:</label>
             <input type="text" name="isim" id="name" placeholder="Isminizi giriniz..." required> 
 
-             <br>
+            <br>
             <label for="lname">Soyadınızı Giriniz:</label>
             <input type="text" name="Sayad" id="lname" placeholder="Soyadınızı giriniz...">
             <br>
+
+            <label><input type="text" name="classs" required/> Adınızı giriniz</label>
             
             <p><span style="color:red ;">required </span>yazılmadığında işaretlenen input satırına giriş yapılmadan yapılan submitlerde "lütfen bu alanı doldurun" şeklinde uyarı verir. input açılış parantezi içine yazılır.</p>
 
             <p><span style="color:red ;">placeholder </span>İnput satırı içerisine flu olarak belirttiğimiz yazıyı yazar</p>
 
             <p><span style="color:red ;">Value ve name </span>girilen input'un backend'de ki değeridir.</p>
+
+            <p><span style="color:red ;">Label içinde input kullanımı </span>Yukarıdaki örnekte kullanıldığı gibi olabilir. bu durumda id-for bağlantısına gerek kalmaz.</p>
 
         </div>
         <hr>
@@ -145,6 +149,7 @@
             <p><span style="color:red ;">size </span>ile satır genişliğini ayarlıyoruz.</p>
 
             <p><span style="color:red ;">select </span>Öğe, bir açılır liste tanımlamak için kullanılır .             Kullanıcılar açılır listeden bir seçenek seçebilir. Açılır liste, iki veya daha fazla "option" öğeden oluşur.</p>
+            <p><span style="color:red ;">Görünür ama seçilmez olması için</span><option disabled selected value="" id="option_title">please choose</option></p>
         </div>
         <hr>
         <div>
