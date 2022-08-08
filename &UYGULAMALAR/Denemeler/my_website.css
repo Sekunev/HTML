@@ -1,0 +1,69 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+
+
+}
+main{
+    width: 400px;
+    background-color: rgba(142, 157, 177, 0.192);
+    padding: 45px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15%;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 15%;
+}
+#pf{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 50%;
+    /* border: 2px solid rgb(174, 177, 192); */
+    transition: .9s;
+    /* hover'ın süresini ayarladık. */
+}
+
+main img:hover{
+    transform: scale(0.9); 
+    /* hover'in küçüklük büyüklüğü */
+}
+
+main h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+main h4{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+main p{
+    text-align:justify;
+}
+/* ul{
+    margin: 0px;
+    padding: 0;
+} */
+
+main li{
+    display: inline;
+    margin: 16px;
+    list-style: none;
+}
+main li a{
+    color: white;
+    font-size: 60px;
+    transition: all ease ease-in-out 250ms;
+}
+main li a:hover{
+    color: #b9b9b9
+
+}
